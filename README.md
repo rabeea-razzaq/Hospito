@@ -1,2 +1,2 @@
-# packAndTrip
-a practice website with html , css and javascript and auth and database implemented using firebase
+# hospito
+a simple practice app implementeing firebase authentication using html ,css ,javascript
