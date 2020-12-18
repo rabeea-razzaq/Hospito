@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-decoration: none;
+}
+.wrapper{
+    background-image: url('./img/hospital\ baaner.jpg');
+    height:auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom:100px;
+}
+#nav-mobile{
+    margin-right: 100px;
+}
+#logo{
+    margin-left: 100px;;
+}
+.sign-in-form,.log-in-form{
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    height: 400px;
+    margin:100px auto;
+    box-shadow:5px grey;
+    display: none;
+    border: 2px solid rgb(207, 206, 206);     
+}
+#log-in,#sign-in{
+    width: 90%;
+    margin: 0px auto
+}
+/* .fixed-action-btn{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+} */
+.cardssection{
+    display: none;
+    margin: 30px;
+}
+input:focus{
+    border-bottom: 2px solid rgb(211, 208, 208) !important;
+    color: rgb(236, 232, 232);
+}
+@media screen and (max-width:900px){
+    #logo{
+        margin-left:0px;
+    }
+    .sign-in-form{
+        width: 85%;
+    }
+    .log-in-form{
+        width: 85%;
+    }
+}

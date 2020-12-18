@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">            
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Firebase Auth</title>
+</head>
+<body>
+    <div class="wrapper">
+    <nav class="z-depth-0 purple darken-4">
+        <div class="nav-wrapper  ">
+            <a href="#" id="logo" class="brand-logo grey-text text-lighten-4">lifeCareHospital</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="always">
+                         <a href="#" class="grey-text text-lighten-4">AboutUs</a>
+                    </li>
+                    <li class="always">
+                         <a href="#" class="grey-text text-lighten-4">Location</a>
+                    </li>
+                    <li class="always">
+                            <a href="#" class="grey-text text-lighten-4">Location And Interior</a>
+                    </li>
+                    <li class="always">
+                            <a href="#" class="grey-text text-lighten-4">OurLabs</a>
+                       </li>
+                    <li class="loggedout">
+                        <a href="#" id="signin"  class="grey-text text-lighten-4">sign IN</a>
+                    </li>
+                    <!-- <li class="loggedout">
+                        <a href="#" id="login" class=" grey-text text-lighten-4">logIn</a>
+                    </li> -->
+                    <li class="loggedin">
+                        <a href="#" id="addguide" class="grey-text text-lighten-4">Create Guide</a>
+                    </li>
+                    <li class="loggedin">
+                         <a href="#" id="logout" class="grey-text text-lighten-4">Logout</a>
+                    </li>
+                  </ul>
+        </div>
+    </nav>
+    <div class="sign-in-form purple darken-4">
+        <h4 class="center grey-text text-lighten-2">Sign in</h4>
+     <form action="" id="sign-in">
+            <h6 class="center grey-text text-lighten-2">create your account now to get the premium experience of our websites.....</h6>
+                <div class="input-field">
+                    <label for="email">Enter Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="input-field">
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password">
+                </div>
+                <button id="siginBtn" class="btn-large btn-flat grey lighten-2 purple-text text-darken-4 right">Create Now</button>
+     </form>
+    </div>
+    <div class="log-in-form purple darken-4">
+        <h4 class="center grey-text text-lighten-2">login in</h4>
+        <form action="" id="log-in">
+            <div class="input-field">
+                <label for="logemail">Enter Email</label>
+                <input type="email" id="logemail">
+            </div>
+            <div class="input-field">
+                <label for="logpass">Enter Password</label>
+                <input type="password" id="logpass">
+            </div>
+            <button id="loginBtn" class="btn-large btn-flat grey lighten-2 purple-text text-darken-4 right">login in</button>
+           <span><p class=" grey-text text-lighten-2">forgot password?<a href="#">clickhere</a><br>Doesn't have an account??<b>Click signin</b></p></span>
+        </form>
+    </div>
+    <div class="fixed-action-btn">
+            <a class="btn-floating btn-large purple darken-4">
+                <i class="material-icons large">account_circle</i>
+            </a>
+            <ul>
+                    <li class="btn-floating btn-large purple darken-3"><i class="material-icons">local_phone</i></li>
+                    <li class="btn-floating btn-large purple darken-2"><i class="material-icons">email</i></li>
+                    <li class="btn-floating btn-large purple darken-1"><i class="material-icons">public</i></li>
+            </ul>
+        </div>
+    <!-- <div class="collectionsection purple darken-4">
+        <ul class="collapsible  z-depth-0">
+
+            
+          </ul>
+                
+    </div> -->
+    <div class="cardssection">
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card purple darken-4">
+                    <img src="./img/timetable-img.jpg" width="100%" height="200px" class="car-img">
+                    <h4 class="card-title center-align grey-text text-lighten-2">COMPLETE SCHEDULE</h4>
+                    <div class="card-content grey-text text-lighten-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero pariatur, enim repellat nemo officiis nihil ipsam officia deserunt autem, temporibus perspiciatis accusamus error id reiciendis eius</p>
+                    </div>
+                   <div class="section">
+                    <button class=" btn-flat btn-large grey lighten-2 purple-text text-darken-4">See Schedule</button>         
+                   </div>   
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                    <div class="card purple darken-4">
+                            <img src="./img/donation image.jpg" width="100%" height="200px" class="car-img">
+                            <h4 class="card-title center-align grey-text text-lighten-2">ABOUT DONATIONS</h4>
+                            <div class="card-content grey-text text-lighten-2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero pariatur, enim repellat nemo officiis nihil ipsam officia deserunt autem, temporibus perspiciatis accusamus error id reiciendis eius</p>
+                            </div>
+                           <div class="section">
+                            <button class=" btn-flat btn-large grey lighten-2 purple-text text-darken-4">READ GUIDE</button>         
+                           </div>   
+                        </div>
+            </div>
+            <div class="col s12 m6 l4">
+                    <div class="card purple darken-4">
+                            <img src="./img/hospital staff.jpg" width="100%" height="200px" class="car-img">
+                            <h4 class="card-title center-align grey-text text-lighten-2">STAFF INFORMATION</h4>
+                            <div class="card-content grey-text text-lighten-2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero pariatur, enim repellat nemo officiis nihil ipsam officia deserunt autem, temporibus perspiciatis accusamus error id reiciendis eius</p>
+                            </div>
+                           <div class="section">
+                            <button class=" btn-flat btn-large grey lighten-2 purple-text text-darken-4">GET INFO</button>         
+                           </div>   
+                        </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="clear: both;"></div> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAck9LwAdMrIFqr-XErAyDXmK4ui2gCpSI",
+    authDomain: "codeandshare-4e0d3.firebaseapp.com",
+    databaseURL: "https://codeandshare-4e0d3.firebaseio.com",
+    projectId: "codeandshare-4e0d3",
+    storageBucket: "codeandshare-4e0d3.appspot.com",
+    messagingSenderId: "679572750627",
+    appId: "1:679572750627:web:f09d24521e38ff9b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+// make auth and firestore reference in a constant
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  // update firestore setting
+//   db.settings({timestampsInSnapshots: true});
+</script>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="auth.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
